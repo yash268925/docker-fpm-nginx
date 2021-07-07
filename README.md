@@ -20,7 +20,7 @@ php.iniを適応したい場合
 vi phpconf/php.ini
 
 docker run -it --rm \
-    -v $(pwd/docroot):/var/www/html \
-    -v $(pwd/phpconf):/phpconf \
+    -v $(pwd)/docroot:/var/www/html \
+    -v $(pwd)/phpconf:/phpconf \
     -p 8080:80 yash268925/fpm-nginx
 ```
